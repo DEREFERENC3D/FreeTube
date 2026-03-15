@@ -14,3 +14,6 @@ overrides:
 
 minimumReleaseAgeExclude:
 - "youtubei.js"
+
+onlyBuiltDependencies:
+- "youtubei.js"
