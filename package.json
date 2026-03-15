@@ -48,7 +48,7 @@
     "pack:renderer": "webpack --mode=production --node-env=production --config _scripts/webpack.renderer.config.js",
     "pack:web": "webpack --mode=production --node-env=production --config _scripts/webpack.web.config.js",
     "pack:botGuardScript": "webpack --config _scripts/webpack.botGuardScript.config.js",
-    "postinstall": "run-s --silent rebuild:electron patch-shaka",
+    "postinstall": "run-s --silent rebuild:electron patch-shaka && cd node_modules/youtubei.js && yarn install && yarn build",
     "rebuild:electron": "electron-builder install-app-deps",
     "release": "run-s test build",
     "ci": "yarn install --silent --frozen-lockfile"
